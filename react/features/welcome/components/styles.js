@@ -8,6 +8,7 @@ import BaseTheme from '../../base/ui/components/BaseTheme.native';
 export const PLACEHOLDER_TEXT_COLOR = BaseTheme.palette.text01;
 
 export const DRAWER_AVATAR_SIZE = 104;
+export const WELCOME_BIP_SIZE = 55
 
 const DRAWER_HEADER_HEIGHT = 220;
 
@@ -30,7 +31,7 @@ export default {
      * The audio-video switch itself.
      */
     audioVideoSwitch: {
-        marginHorizontal: 5
+        transform: [{ scaleX: .7 }, { scaleY: .7 }]
     },
 
     /**
@@ -77,7 +78,7 @@ export default {
      */
     buttonText: {
         alignSelf: 'center',
-        color: BaseTheme.palette.text01,
+        color: BaseTheme.palette.uiBipBackground,
         fontSize: 14
     },
 
@@ -205,7 +206,14 @@ export default {
      * The container of the label of the audio-video switch.
      */
     switchLabel: {
-        paddingHorizontal: 3
+        paddingHorizontal: 3,
+    },
+
+    /**
+     * The style of the text of the audio-video switch.
+     */
+    switchText: {
+        color: '#FFF'
     },
 
     /**
@@ -213,7 +221,7 @@ export default {
      */
     textInput: {
         backgroundColor: 'transparent',
-        borderColor: BaseTheme.palette.field02,
+        borderColor: BaseTheme.palette.surface01,
         borderRadius: 4,
         borderWidth: 1,
         color: TEXT_COLOR,
@@ -254,19 +262,19 @@ export default {
      * The style of the top-level container of {@code WelcomePage}.
      */
     welcomePage: {
-        backgroundColor: BaseTheme.palette.uiBackground,
+        backgroundColor: BaseTheme.palette.uiBipBackground,
         flex: 1,
         overflow: 'hidden'
     },
 
     recentList: {
-        backgroundColor: BaseTheme.palette.uiBackground,
+        backgroundColor: BaseTheme.palette.uiBipBackground,
         flex: 1,
         overflow: 'hidden'
     },
 
     recentListDisabled: {
-        backgroundColor: BaseTheme.palette.uiBackground,
+        backgroundColor: BaseTheme.palette.uiBipBackground,
         flex: 1,
         opacity: 0.8,
         overflow: 'hidden'

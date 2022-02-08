@@ -152,7 +152,7 @@ export default {
     },
 
     roomTimer: {
-        color: BaseTheme.palette.text01,
+        color: BaseTheme.palette.uiBipBackground,
         ...BaseTheme.typography.bodyShortBold,
         paddingHorizontal: 8,
         paddingVertical: 6,
@@ -167,7 +167,7 @@ export default {
     },
 
     roomName: {
-        color: BaseTheme.palette.text01,
+        color: BaseTheme.palette.uiBipBackground,
         ...BaseTheme.typography.bodyShortBold,
         paddingVertical: 6
     },

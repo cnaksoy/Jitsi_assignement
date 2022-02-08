@@ -67,11 +67,9 @@ class VideoSwitch extends Component<Props> {
             <View style = { styles.audioVideoSwitchContainer }>
                 <TouchableWithoutFeedback
                     onPress = { this._onStartAudioOnlyFalse }>
-                    <View style = { styles.switchLabel }>
-                        <Text style = { _headerStyles.headerText }>
+                        <Text style = { styles.switchText }>
                             { t('welcomepage.audioVideoSwitch.video') }
                         </Text>
-                    </View>
                 </TouchableWithoutFeedback>
                 <Switch
                     onValueChange = { this._onStartAudioOnlyChange }
@@ -81,11 +79,9 @@ class VideoSwitch extends Component<Props> {
                     value = { _settings.startAudioOnly } />
                 <TouchableWithoutFeedback
                     onPress = { this._onStartAudioOnlyTrue }>
-                    <View style = { styles.switchLabel }>
-                        <Text style = { _headerStyles.headerText }>
+                        <Text style = { styles.switchText }>
                             { t('welcomepage.audioVideoSwitch.audio') }
                         </Text>
-                    </View>
                 </TouchableWithoutFeedback>
             </View>
         );

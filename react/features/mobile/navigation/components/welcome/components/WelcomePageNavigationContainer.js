@@ -20,9 +20,20 @@ import {
 } from '../../../screenOptions';
 
 import CustomDrawerContent from './CustomDrawerContent';
+import { Icon, IconBip } from '../../../../../base/icons';
+import { WELCOME_BIP_SIZE } from '../../../../../welcome/components/styles';
 
 
 const DrawerStack = createDrawerNavigator();
+
+function LogoTitle() {
+    return (
+        <Icon
+            size={WELCOME_BIP_SIZE}
+            src={IconBip}
+            style = {{ marginBottom: 15}} />
+    );
+}
 
 
 const WelcomePageNavigationContainer = () => {
@@ -31,37 +42,37 @@ const WelcomePageNavigationContainer = () => {
     return (
         <DrawerStack.Navigator
             /* eslint-disable-next-line react/jsx-no-bind */
-            drawerContent = { props => <CustomDrawerContent { ...props } /> }
-            screenOptions = { drawerContentOptions }>
+            drawerContent={props => <CustomDrawerContent {...props} />}
+            screenOptions={drawerContentOptions}>
             <DrawerStack.Screen
-                component = { WelcomePage }
-                name = { screen.welcome.main }
-                options = { welcomeScreenOptions } />
+                component={WelcomePage}
+                name={screen.welcome.main}
+                options={{ ...welcomeScreenOptions, headerTitle: (props) => <LogoTitle {...props} /> }} />
             <DrawerStack.Screen
-                component = { SettingsView }
-                name = { screen.welcome.settings }
-                options = {{
+                component={SettingsView}
+                name={screen.welcome.settings}
+                options={{
                     ...settingsScreenOptions,
                     title: t('settingsView.header')
                 }} />
             <DrawerStack.Screen
-                component = { TermsView }
-                name = { screen.welcome.terms }
-                options = {{
+                component={TermsView}
+                name={screen.welcome.terms}
+                options={{
                     ...termsAndPrivacyScreenOptions,
                     title: t('termsView.header')
                 }} />
             <DrawerStack.Screen
-                component = { PrivacyView }
-                name = { screen.welcome.privacy }
-                options = {{
+                component={PrivacyView}
+                name={screen.welcome.privacy}
+                options={{
                     ...termsAndPrivacyScreenOptions,
                     title: t('privacyView.header')
                 }} />
             <DrawerStack.Screen
-                component = { HelpView }
-                name = { screen.welcome.help }
-                options = {{
+                component={HelpView}
+                name={screen.welcome.help}
+                options={{
                     ...helpScreenOptions,
                     title: t('helpView.header')
                 }} />

@@ -6,6 +6,7 @@ import { ScrollView, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Avatar } from '../../../../../base/avatar';
+import { Icon, IconBip } from '../../../../../base/icons';
 import {
     getLocalParticipant, getParticipantDisplayName
 } from '../../../../../base/participants';
@@ -26,21 +27,18 @@ type Props = {
 };
 
 const CustomDrawerContent = (props: Props) => (
-    <ScrollView bounces = { false }>
-        <View style = { styles.drawerHeader }>
-            <Avatar
-                participantId = { props.localParticipantId }
-                size = { DRAWER_AVATAR_SIZE } />
-            <Text style = { styles.displayName }>
-                { props.displayName }
-            </Text>
+    <ScrollView bounces={false}>
+        <View style={styles.drawerHeader}>
+            <Icon
+                size={DRAWER_AVATAR_SIZE}
+                src={IconBip} />
         </View>
         <SafeAreaView
-            edges = { [
+            edges={[
                 'left',
                 'right'
-            ] }>
-            <DrawerItemList { ...props } />
+            ]}>
+            <DrawerItemList {...props} />
         </SafeAreaView>
     </ScrollView>
 );

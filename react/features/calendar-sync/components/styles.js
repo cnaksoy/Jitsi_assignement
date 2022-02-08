@@ -167,13 +167,13 @@ export default createStyleSheet({
     },
 
     calendarSync: {
-        backgroundColor: BaseTheme.palette.uiBackground,
+        backgroundColor: BaseTheme.palette.uiBipBackground,
         flex: 1,
         overflow: 'hidden'
     },
 
     calendarSyncDisabled: {
-        backgroundColor: BaseTheme.palette.uiBackground,
+        backgroundColor: BaseTheme.palette.uiBipBackground,
         flex: 1,
         opacity: 0.8,
         overflow: 'hidden'

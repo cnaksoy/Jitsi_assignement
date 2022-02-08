@@ -2,7 +2,7 @@
 
 import { BoxModel, ColorPalette } from '../../../styles';
 
-const OVERLAY_FONT_COLOR = 'rgba(255, 255, 255, 0.6)';
+const OVERLAY_FONT_COLOR = '#040404';
 const SECONDARY_ACTION_BUTTON_SIZE = 30;
 
 export const AVATAR_SIZE = 65;
@@ -152,7 +152,7 @@ const SECTION_LIST_STYLES = {
 
     listSection: {
         alignItems: 'center',
-        backgroundColor: 'rgba(255, 255, 255, 0.2)',
+        backgroundColor: '#d9d9d9',
         flex: 1,
         flexDirection: 'row',
         paddingVertical: 5,

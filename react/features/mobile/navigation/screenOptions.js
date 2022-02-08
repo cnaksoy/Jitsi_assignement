@@ -126,7 +126,7 @@ export const settingsScreenOptions = {
             src = { IconSettings } />
     ),
     headerTitleStyle: {
-        color: BaseTheme.palette.text01
+        color: BaseTheme.palette.uiBipBackground
     }
 };
 
@@ -142,7 +142,7 @@ export const termsAndPrivacyScreenOptions = {
             src = { IconInfo } />
     ),
     headerTitleStyle: {
-        color: BaseTheme.palette.text01
+        color: BaseTheme.palette.uiBipBackground
     }
 };
 
@@ -158,7 +158,7 @@ export const helpScreenOptions = {
             src = { IconHelp } />
     ),
     headerTitleStyle: {
-        color: BaseTheme.palette.text01
+        color: BaseTheme.palette.uiBipBackground
     }
 };
 

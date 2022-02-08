@@ -20,6 +20,7 @@ export const colors = {
     primary10: '#17A0DB',
     primary11: '#1081B2',
     primary12: '#B8C7E0',
+    primary13: '#03a1f2', //Bip Blue
 
     surface00: '#111111',
     surface01: '#040404',
@@ -60,6 +61,7 @@ export const colors = {
 export const colorMap = {
     // Default page background
     uiBackground: 'surface01',
+    uiBipBackground: 'surface11', //bip white
 
     // Container background
     ui01: 'surface02',
@@ -75,7 +77,7 @@ export const colorMap = {
     action04: 'primary11',
 
     // Screen header
-    screen01Header: 'primary10',
+    screen01Header: 'primary13',
 
     // Status bar
     status01Bar: 'primary11',
@@ -144,7 +146,7 @@ export const colorMap = {
     bottomSheet: 'surface00',
 
     // Primary text – default color for body copy & headers
-    text01: 'surface11',
+    text01: 'surface01',
 
     // Secondary text with medium contrast
     text02: 'surface09',
